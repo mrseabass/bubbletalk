@@ -1,0 +1,23 @@
+* {
+
+margin: 0;
+
+padding: 0;
+
+}
+
+
+html, body
+{
+    height: 100%;
+    min-height: 100%;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@font-face { font-family: Informal; src: url('nusaliver.ttf'); } 
+@font-face { font-family: Formal; src: url('segan-light.ttf');}

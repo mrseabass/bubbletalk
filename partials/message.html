@@ -1,0 +1,7 @@
+<div draggable moveable class="message">
+	<div class="overflow" >
+		<p class="text">{{messages[$index].text}}</p>
+		<p class="timestamp">-  {{messages[$index].author}} @ {{messages[$index].created | date:'short'}}</p>
+	</div>
+	<div class="arrow" style="border-bottom: 20px solid {{messages[$index].color}}"></div>
+</div>
