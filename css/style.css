@@ -53,6 +53,8 @@ body {
 	left: 250px;
 	text-align: center;
 	box-shadow: 2px 2px 2px rgba(26, 26, 26, 0.5);
+	transition: top 0.5s, left 0.5s;
+	cursor: pointer;
 }
 
 .arrow {
@@ -88,4 +90,89 @@ body {
 
 .dragged{
 	opacity: 0.7;
+	transition: top 0s, left 0s;
+}
+
+
+
+input, textarea {
+	font-family: Formal, sans-serif;
+	font-size: 120%;
+	padding: 9px;
+	border: solid 0px #e5e5e5;
+	outline: 0;
+	width: 200px;
+	background: #DFDFDF;
+	margin-top: 10px;
+	box-shadow: -1px -1px #1B1D1E;
+}
+
+textarea {
+	width: 75%;
+	max-width:75%;
+	height: 150px;
+	max-height: 150px;
+	line-height: 150%;
+	margin-top: 0px;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus{
+	border-color: #C9C9C9;
+}
+
+label {
+	margin-left: 10px;
+	color: #999999;
+}
+
+.message-creator {
+	width: 330px;
+	height: 316px;
+	position: absolute;
+	left: 0px;
+	top: 30%;
+	background-color: #424E4F;
+	z-index: 500;
+	padding: 15px;
+	font-family: Formal, sans-serif;
+	box-shadow: 2px 2px 2px #1B1D1E;
+}
+
+.click-area {
+	width: 60px;
+	height: 70px;
+	left: 345px;
+	top: -275px;
+	z-index: 501;
+	position: relative;
+	background-color: #424E4F;
+	box-shadow: 2px 2px 2px #1B1D1E;
+	cursor: pointer;
+}
+
+.submit input {
+	background: #207DF0;
+	border: 0;
+	color: #BCD5FC;
+	width: 218px;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4);
+	box-shadow: 1px 1px #1B1D1E;
+	transition: background 0.2s;
+}
+
+.submit input:hover {
+	background: #2D84EE;
+	color: #D0E2FD;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4);
+}
+
+.submit input:active {
+	background: #1378F2;
+	color: #A4C7FB;
+	box-shadow: -1px -1px #1B1D1E;
+}
+
+#colorpicker {
+	border: 0;
 }
